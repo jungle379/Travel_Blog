@@ -5,3 +5,6 @@
 ・ HTML  
 ・ CSS  
 ・ JavaScript(Next.js)
+
+### 使用したCMS
+・ microCMS  
