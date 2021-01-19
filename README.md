@@ -4,7 +4,8 @@
 ## 使用言語
 ・ HTML  
 ・ CSS  
-・ JavaScript(Next.js)
+・ JavaScript
+・ Next.js
 
-### 使用したCMS
+### 使用したCMS（これから追加予定）
 ・ microCMS  
