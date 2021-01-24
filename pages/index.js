@@ -12,9 +12,9 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>自己紹介</p>
+        <p>サイト案内</p>
         <p>
-          主に東京へ年1回は旅行しています。コロナ禍の中で遠出は出来ていませんが、気になり撮った写真にコメントを付け投稿していきます！
+      旅行先で撮った写真とブログ形式でコメントをアップしていきます！
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -32,6 +32,9 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
+        <h3>
+          <Link href="posts/mypage">自己紹介</Link>
+        </h3>
       </section>
     </Layout>
   )
