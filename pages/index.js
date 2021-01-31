@@ -35,6 +35,9 @@ export default function Home({ allPostsData }) {
         <h3>
           <Link href="posts/mypage">自己紹介</Link>
         </h3>
+        <h4>
+          <Link href="posts/new">投稿フォームへ</Link>
+        </h4>
       </section>
     </Layout>
   )
