@@ -5,6 +5,7 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 
+
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
@@ -36,7 +37,9 @@ export default function Home({ allPostsData }) {
           <Link href="posts/mypage">自己紹介</Link>
         </h3>
         <h4>
-          <Link href="posts/new">投稿フォームへ</Link>
+        <div className="home-archive">
+          <Link href="/archive/[page]" as="/archive/1"><a>アーカイブ</a></Link>
+        </div>
         </h4>
       </section>
     </Layout>
