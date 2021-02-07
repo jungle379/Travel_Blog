@@ -5,7 +5,6 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 
-
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
@@ -18,21 +17,6 @@ export default function Home({ allPostsData }) {
       旅行先で撮った写真とブログ形式でコメントをアップしていきます！
         </p>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
         <h3>
           <Link href="posts/mypage">自己紹介</Link>
         </h3>
@@ -41,13 +25,14 @@ export default function Home({ allPostsData }) {
           <Link href="/archive/[page]" as="/archive/1"><a>アーカイブ</a></Link>
         </div>
         </h4>
-      </section>
     </Layout>
   )
 }
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
+  //const posts = await readContentFiles({ fs })
+
   return {
     props: {
       allPostsData

@@ -2,8 +2,10 @@ import fs from "fs"
 import Link from "next/link"
 import Layout from "../../components/Layout"
 import Pager from "../../components/Pager"
-import { listContentFiles, readContentFiles } from "../../lib/content-loader"
+import { getSortedPostsData, listContentFiles } from "../../lib/posts"
+
 const COUNT_PER_PAGE = 10
+
 export default function Archive(props) {
   const { posts, page, total, perPage } = props
   return (
@@ -38,10 +40,10 @@ export async function getStaticProps({ params }) {
   const page = parseInt(params.page, 10)
   const end = COUNT_PER_PAGE * page
   const start = end - COUNT_PER_PAGE
-  const posts = await readContentFiles({ fs })
+  const posts = await getSortedPostsData
   return {
     props: {
-      posts: posts.slice(start, end),
+      posts: posts(start, end),
       page,
       total: posts.length,
       perPage: COUNT_PER_PAGE,
