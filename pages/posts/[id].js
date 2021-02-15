@@ -3,6 +3,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
+import Link from "next/link"
 
 export default function Post({ postData }) {
   return (
@@ -16,6 +17,7 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div><Link href="/archive/[page]" as="/archive/1"><a>アーカイブへ戻る</a></Link></div>
       </article>
     </Layout>
   )

@@ -4,6 +4,7 @@ import Layout from "../../components/Layout"
 import Pager from "../../components/Pager"
 import { getSortedPostsData, listContentFiles } from "../../lib/posts"
 
+
 const COUNT_PER_PAGE = 10
 
 export default function Archive(props) {
@@ -11,10 +12,10 @@ export default function Archive(props) {
   return (
     <Layout title="アーカイブ">
       {posts.map((post) => <div
-        key={post.slug}
+        key={post.id}
         className="post-teaser"
       >
-        <h2><Link href="/posts/[id]" as={`/posts/${post.slug}`}><a>{post.title}</a></Link></h2>
+        <h2><Link href="/posts/[id]" as={`/posts/${post.id}`}><a>{post.title}</a></Link></h2>
         <div><span>{post.published}</span></div>
       </div>)}
       <Pager
