@@ -5,8 +5,8 @@
 ## 使用言語
 ・ HTML  
 ・ CSS  
-・ JavaScript  
-・ Next.js
+・ JavaScript(React)  
+・
 
 ## 機能
 ・ ブログ閲覧  
@@ -14,6 +14,6 @@
 ・
 
 ## 追加予定の機能
-・ CMS導入  
+・ スライド  
 ・ アニメーション  
-・ スライド
+・ 
