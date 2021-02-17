@@ -41,7 +41,7 @@ export async function getStaticProps({ params }) {
   const page = parseInt(params.page, 10)
   const end = COUNT_PER_PAGE * page
   const start = end - COUNT_PER_PAGE
-  const posts = await getSortedPostsData
+  const posts = getSortedPostsData
   return {
     props: {
       posts: posts(start, end),
