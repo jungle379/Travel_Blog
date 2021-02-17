@@ -1,6 +1,6 @@
 import fs from "fs"
 import Link from "next/link"
-import Layout from "../../components/Layout"
+import Layout from "../../components/layout"
 import Pager from "../../components/Pager"
 import { getSortedPostsData, listContentFiles } from "../../lib/posts"
 
