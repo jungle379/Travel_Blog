@@ -11,7 +11,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>サイト案内</p>
+        <h1>サイト案内</h1>
         <p>
       旅行先で撮った写真とブログ形式でコメントをアップしていきます！
         </p>

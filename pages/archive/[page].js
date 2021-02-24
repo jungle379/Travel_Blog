@@ -10,7 +10,8 @@ const COUNT_PER_PAGE = 10
 export default function Archive(props) {
   const { posts, page, total, perPage } = props
   return (
-    <Layout title="アーカイブ">
+    <Layout title="">
+      <h1>ブログアーカイブ</h1>
       {posts.map((post) => <div
         key={post.id}
         className="post-teaser"

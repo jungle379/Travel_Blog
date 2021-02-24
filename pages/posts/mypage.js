@@ -12,11 +12,11 @@ export default function FirstPost() {
       <p>
       年１回は旅行に行くようにしています。遠くから全体を写す写真が多めですがご覧になってください！！
       </p>
-      <h2>
+      <div>
         <Link href="/">
           <a>トップページへ</a>
         </Link>
-      </h2>
+      </div>
     </>
   )
 }
