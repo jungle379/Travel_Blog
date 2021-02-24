@@ -5,8 +5,8 @@
 ## 使用言語
 ・ HTML  
 ・ CSS  
-・ JavaScript(React)  
-・
+・ JavaScript  
+・ React. 
 
 ## 機能
 ・ ブログ記事閲覧(スマホで撮った写真付)  
