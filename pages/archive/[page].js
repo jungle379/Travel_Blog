@@ -1,7 +1,7 @@
 import fs from "fs"
 import Link from "next/link"
 import Layout from "../../components/layout"
-import Pager from "../../components/Pager"
+import Pager from "../../components/pager"
 import { getSortedPostsData, listContentFiles } from "../../lib/posts"
 
 
@@ -11,7 +11,7 @@ export default function Archive(props) {
   const { posts, page, total, perPage } = props
   return (
     <Layout title="">
-      <h1>ブログアーカイブ</h1>
+      <h1>過去投稿一覧</h1>
       {posts.map((post) => <div
         key={post.id}
         className="post-teaser"

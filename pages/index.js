@@ -10,6 +10,16 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <div className="slide">
+        <img src="/images/TIKO.jpg"></img>
+      </div>
+      <div className="toolbar">
+        <div className="nav">
+          <div id="prev"></div>
+          <div id="page"></div>
+          <div id="next"></div>
+        </div>
+      </div>
       <section className={utilStyles.headingMd}>
         <h1>サイト案内</h1>
         <p>
