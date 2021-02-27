@@ -19,4 +19,4 @@
 ・ 
 
 ## サイトURL  
-https://vercel.com/jungle379/travel-blog
+https://travel-blog.vercel.app/
