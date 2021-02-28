@@ -3,7 +3,7 @@ import Link from "next/link"
 import Layout from "../../components/layout"
 import Pager from "../../components/pager"
 import { getSortedPostsData, listContentFiles } from "../../lib/posts"
-
+import Date from '../../components/date'
 
 const COUNT_PER_PAGE = 10
 
