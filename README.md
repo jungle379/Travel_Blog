@@ -6,17 +6,12 @@
 ・ HTML  
 ・ CSS  
 ・ JavaScript  
-・ React. 
+・ React  
 
 ## 機能
 ・ ブログ記事閲覧(スマホで撮った写真付)  
 ・ ページネーションによるアーカイブ  
-・
-
-## 追加予定の機能
-・ トップページにスライド  
-・ アニメーション  
-・ 
+・ スライド機能
 
 ## サイトURL  
 https://travel-blog.vercel.app/
