@@ -13,7 +13,7 @@ export default function FirstPost() {
       </p>
       <div>
         <Link href="/">
-          <a>トップページへ</a>
+          <a>← トップページへ</a>
         </Link>
       </div>
     </>
